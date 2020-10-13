@@ -1,0 +1,95 @@
+
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic");
+
+*,*::before,*::after{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Nunito Sans",'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0.363);
+    div.grand{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        min-height: 30vh;
+        background-color: rgba(128, 128, 128, 0.26);
+        div.editor__grand{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            grid-gap: 0.5rem;
+            margin-top: 0.25rem;
+            padding: 0px 0.5rem;
+            div.editor__parent{
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(34, 34, 34, 0.644);
+                div.editor__head{
+                    display: inline-flex;
+                    padding: 0.25rem 1rem;
+                    justify-content: space-between;
+                    border-top-right-radius: 5px ;
+                    border-top-left-radius: 5px ;
+                    p{
+                        color: white;
+                        font-size: 1.1rem;
+                    }
+                    span{
+                        display: flex;
+                        align-items: center;
+                        div.editor__ldswitch{
+                                    width: 2rem;
+                                    height:1rem;
+                                    border-radius: 1rem;
+                                    background: url("../public/switch.jpg");
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    &:hover{
+                                        cursor: pointer;
+                                    }
+                                    div.ball{
+                                        width: 1rem;
+                                        height: 1rem;   
+                                        border-radius: 50%;
+                                        background-color: #2d2d2d;
+                                    
+                                }
+                            }
+                        &>div{
+                            display: flex;
+                            align-items: center;
+                            margin-left: 0.25rem;
+                            button{
+                                border: none;
+                                outline: none;
+                                padding: 0.5px 5px;
+                                color : white;
+                                background-color: royalblue; 
+                                margin: 0px 2px;
+                                border-radius: 50%;
+                                font-size: 0.75rem;
+                                &:hover{
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                    }
+                }
+            }
+        }
+        div.iframe{
+            margin: 0px 0.5rem;
+            margin-top: 1rem;
+            iframe{
+                width: 100%;
+                height: 40vh;
+                background-color: white;
+                border-radius: 5px;
+            }
+        }
+    }

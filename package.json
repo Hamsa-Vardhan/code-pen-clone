@@ -1,0 +1,21 @@
+{
+  "name": "codepen-ace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  },
+  "dependencies": {
+    "sass": "1.26.11",
+    "node-sass": "4.14.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "animejs": "3.2.0",
+    "next": "^9.5.5",
+    "ace-builds": "1.4.12",
+    "react-ace": "9.1.4"
+  }
+}
